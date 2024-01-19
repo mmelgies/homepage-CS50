@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
+    margin: auto;
+    width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.red::after {
+    content: "*";
+    color: red;
+}
+
+
+
+h1 {
+    width: 330px;
+
+    text-align: center;
+}
+
+input, textarea {
+    width: 330px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin-top: 10px;
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.btn {
+    width: 48%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 7px;
+    /*background-color: #4CAF50;*/
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 15px;
+
+}
+
+a:link {
+    text-decoration: none;
+
+  }
+
+a {
+    background-color: #0066a2;;
+}
+
+button {
+    background-color: #4CAF50;
+}
+
+label {
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a:hover {
+    background-color: red;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script src="order-now.js"></script>
+        <script src="login.js"></script>
+        <link href="order-now.css" rel="stylesheet">
+        <title>order-now</title>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="left">
+                    <a href="index.html">Account</a>
+                    <a href="working.html">About us</a>
+                </div>
+                <div class="right">
+                    <a href="working.html">Products</a>
+                    <a href="working.html">Services</a>
+                    <a href="working.html">Contact</a>
+                </div>
+            </div>
+
+                <div class="order-now">
+
+                    <p id="type">Choose what you want to order:</p>
+                    <select id="services" name="services">
+                        <option value="Product">Product</option>
+                        <option value="Services">Services</option>
+                        <option value="Both">Both</option>
+                    </select>
+                    <textarea id="subject" name="subject" placeholder="Write here what you want and we will contact with you as fast as we can"></textarea>
+                   <!-- <input type="submit" value="Submit">-->
+                    <div class=sth>
+                        <button class="open-button" onclick="openForm()">Submit</button>
+
+                        <div class="form-popup" id="myForm">
+                          <form action="/action_page.php" class="form-container">
+                            <h1>Login</h1>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <!--<button type="submit" class="btn">Sign In</button>-->
+                            <button type="button" class="btn" onclick="redirectToWorking()">Sign In</button>
+                            <!--<button type="submit" class="btn sign-up">Sign Up</button>-->
+                            <button type="button" class="btn sign-up" onclick="redirectToSignUp()">Sign Up</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="footer">
+                <p>Copyright © Melgies CS50 2023</p>
+            </div>
+        </div>
+
+    </body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="registrationform.css">
+        <script src="login.js"></script>
+    </head>
+
+    <body>
+      <div class="container">
+        <h1>Registration Form</h1>
+        <label for="firstname">First name:</label>
+        <input type="text" placeholder="Enter your first name" name="firstname" required>
+        <label for="lastname">Last name:</label>
+        <input type="text" placeholder="Enter your last name" name="firstname" required>
+        <label for="birth">Date of Birth:</label>
+        <input type="date" id="birthday" name="birthday">
+        <label for="email">E-mail:</label>
+        <input type="email" placeholder="Enter your e-mail" id="email" name="email">
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" placeholder="123-456-789" name="phone">
+        <label for="adress">Full adress:</label>
+        <textarea name="address" rows="4" cols="50" placeholder="Enter here your full corespondence address. Country/City/Street/postcode"></textarea>
+        <div class="buttons">
+          <button type="button" class="btn" onclick="redirectToWorking()">Submit</button>
+          <a href="index.html" class="btn">Go to Home Page</a>
+        </div>
+      </div>
+        </body>
+</html>
